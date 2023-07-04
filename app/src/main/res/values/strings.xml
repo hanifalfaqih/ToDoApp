@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Do Your Task!</string>
+    <string name="empty_data">Empty Data</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="search">Search</string>
+    <string name="priority_high">Priority High</string>
+    <string name="priority_low">Priority Low</string>
+    <string name="sort_by">Sort By</string>
+    <string name="delete_all">Delete All</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_delete_dialog">Delete \'%s\'</string>
+    <string name="message_delete_dialog">Are you sure want to delete \'%s\'?</string>
+    <string name="message_delete_all_dialog">Are you sure want to delete all data?</string>
+    <string name="message_update">Successfully updated!</string>
+    <string name="message_delete">Successfully deleted!</string>
+    <string name="message_add">Successfully added!</string>
+    <string name="message_when_data_empty">Please fill out all fields</string>
+    <string name="undo">Undo</string>
+    <string name="change_layout">Change Layout</string>
+
+
+    <string-array name="priorities">
+        <item>High Priority</item>
+        <item>Medium Priority</item>
+        <item>Low Priority</item>
+    </string-array>
+</resources>

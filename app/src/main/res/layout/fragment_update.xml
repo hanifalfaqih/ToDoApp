@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="args"
+            type="id.allana.todoapp_learnfromudemy.fragment.update.UpdateFragmentArgs" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_24sdp"
+        tools:context=".fragment.update.UpdateFragment">
+
+        <EditText
+            android:id="@+id/et_title_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/title"
+            android:background="@drawable/bg_custom_input"
+            android:paddingStart="@dimen/_24sdp"
+            android:paddingEnd="@dimen/_24sdp"
+            android:layout_alignParentTop="true"
+            android:text="@{args.currentData.title}"
+            android:importantForAutofill="no" />
+
+        <Spinner
+            android:id="@+id/spinner_priority_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_below="@id/et_title_update"
+            android:entries="@array/priorities"
+            android:background="@drawable/bg_custom_input"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:parseToPrioritySelection="@{args.currentData.priority}"/>
+
+        <EditText
+            android:id="@+id/et_description_update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:hint="@string/description"
+            android:ems="10"
+            android:paddingStart="@dimen/_24sdp"
+            android:paddingEnd="@dimen/_24sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/bg_custom_input"
+            android:layout_below="@id/spinner_priority_update"
+            android:text="@{args.currentData.description}"
+            android:importantForAutofill="no" />
+    </RelativeLayout>
+</layout>
